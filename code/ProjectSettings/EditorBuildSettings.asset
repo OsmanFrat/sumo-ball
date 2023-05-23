@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/mainMenu.unity
+    guid: f028b4ed2c9d0c1409d07e5fa2fc921e
+  - enabled: 1
+    path: Assets/Scenes/SumoArena1.unity
+    guid: a4b96ad7a65484fd4a83cb97540eee50
   m_configObjects: {}

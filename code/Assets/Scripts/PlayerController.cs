@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     
     void Update()
     {
+        // Player movement
         float forwardInput = Input.GetAxis("Vertical");
 
         playerRb.AddForce(Vector3.forward * speed * forwardInput);
@@ -27,8 +28,10 @@ public class PlayerController : MonoBehaviour
         
         playerRb.AddForce(Vector3.right * horizontalInput * speed);
 
+        // Power up position
         powerUpIndicator.transform.position = transform.position  + new Vector3(0, -0.3f, 0);
 
+        // Power up rotation animation
         rotatingPowerUp++;
         if (rotatingPowerUp >= 2)
         {
@@ -37,6 +40,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Gaining power up
     private void OnTriggerEnter(Collider other) {
         if(other.CompareTag("PowerUp"))
         {
@@ -47,6 +51,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Power up countdown
     IEnumerator PowerUpCountDownRoutine()
     {
         yield return new WaitForSeconds(7);
@@ -54,6 +59,7 @@ public class PlayerController : MonoBehaviour
         powerUpIndicator.gameObject.SetActive(false);
     }
 
+    // Power up
     private void OnCollisionEnter(Collision collision) {
         if(collision.gameObject.CompareTag("Enemy") && hasPowerUp)
         {

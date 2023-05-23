@@ -348,6 +348,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/SceneChanger.cs"
 "Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 
