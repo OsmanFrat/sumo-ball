@@ -7,16 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int score;
-    public int lastScore;
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI lastScoreText;
     public GameObject deathMenu;
     public GameObject pauseMenu;
     public static bool GameIsPaused = false;
     void Start()
     {
         score = 0;
-        lastScore = 0;
         deathMenu.SetActive(false);
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
@@ -36,9 +33,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        scoreText.text = "Score: " + score;
-        lastScoreText.text = "High score: " + lastScore;
-        
+        scoreText.text = "Score: " + score;        
     }
     
     // Score and death checker
@@ -63,7 +58,7 @@ public class GameManager : MonoBehaviour
     {
         deathMenu.SetActive(true);
         Time.timeScale = 0f;
-        GameIsPaused = true;
+        GameIsPaused = false;
     }
     public void Pause()
     {

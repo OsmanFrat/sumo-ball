@@ -38,17 +38,23 @@ public class PlayerController : MonoBehaviour
             rotatingPowerUp = 0;
             powerUpIndicator.transform.Rotate(new Vector3(0, 3, 0));
         }
+        
+        
+
     }
 
     // Gaining power up
-    private void OnTriggerEnter(Collider other) {
-        if(other.CompareTag("PowerUp"))
+    private void OnTriggerEnter(Collider other) 
+    {
+    
+    if(other.CompareTag("PowerUp"))
         {
             hasPowerUp = true;
             powerUpIndicator.gameObject.SetActive(true);
             Destroy(other.gameObject);
             StartCoroutine(PowerUpCountDownRoutine());
         }
+
     }
 
     // Power up countdown
