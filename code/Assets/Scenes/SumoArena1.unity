@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028346, g: 0.22571373, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -894,7 +894,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5172843476586001613, guid: ffb538aab80b18a49a0651713ad4ca2e, type: 3}
+  strongEnemy: {fileID: 8958919973222791622, guid: dc07f0a2a321cf748aac1b776b6f5cd1, type: 3}
   powerUpPrefab: {fileID: 8823438349865878106, guid: c93ba87b8792369479502909892864d6, type: 3}
+  gunPowerUp: {fileID: 4119866607156418723, guid: 5cea31ccb36043e489b66ba7e6d48c2f, type: 3}
+  smashPowerUp: {fileID: 8898554711542829131, guid: 241f15019b1ad354fa2163941277f055, type: 3}
+  boss: {fileID: 2087801239238284815, guid: 8f51c3f0caa0fdb42885ce0ae0c7b846, type: 3}
   enemyCount: 0
   waveNumber: 1
   powerUpNumber: 1
@@ -1492,7 +1496,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 42794f97301499440b3553d61f03b437, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.086
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1721,6 +1725,10 @@ PrefabInstance:
     - target: {fileID: 1301643505922104, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
       propertyPath: m_Name
       value: Island
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301643505922104, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4625923886776944, guid: 961be46ca9a355943ae3f65c47741bb0, type: 3}
       propertyPath: m_RootOrder
@@ -2196,7 +2204,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 896, y: 0, z: 769.9}
+  m_Size: {x: 12344, y: 0, z: 7780.6}
   m_Center: {x: -1.3774529, y: 0, z: 0}
 --- !u!1001 &1727592034
 PrefabInstance:
@@ -2520,6 +2528,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4339754604561324626, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339754604561324627, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339754604561324629, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 2700768772020199523, guid: 0ac8843b2f4aece4abbbb60cff27f249, type: 3}
     - target: {fileID: 4339754604561324629, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
       propertyPath: powerUpIndicator
       value: 

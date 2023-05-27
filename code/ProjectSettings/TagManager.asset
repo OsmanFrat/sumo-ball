@@ -6,6 +6,10 @@ TagManager:
   tags:
   - PowerUp
   - Enemy
+  - GunPowerUP
+  - Ground
+  - SmashPowerUp
+  - Boss
   layers:
   - Default
   - TransparentFX
