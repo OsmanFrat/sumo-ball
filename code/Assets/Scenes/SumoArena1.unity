@@ -501,6 +501,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1742899641471652, guid: 923deea38dc6a8843b15db7638919c1e, type: 3}
   m_PrefabInstance: {fileID: 1727592034}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &816279002 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 4339754604561324627, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+  m_PrefabInstance: {fileID: 4339754604313651313}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &839614628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2533,6 +2538,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4339754604561324627, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4339754604561324627, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
@@ -2540,6 +2549,10 @@ PrefabInstance:
       propertyPath: bullet
       value: 
       objectReference: {fileID: 2700768772020199523, guid: 0ac8843b2f4aece4abbbb60cff27f249, type: 3}
+    - target: {fileID: 4339754604561324629, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
+      propertyPath: playerRb
+      value: 
+      objectReference: {fileID: 816279002}
     - target: {fileID: 4339754604561324629, guid: 8182b6e9f4e4f8c438a2a13931125f0a, type: 3}
       propertyPath: powerUpIndicator
       value: 

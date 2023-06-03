@@ -280,6 +280,7 @@
 -r:"Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aP.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Bullet.cs"
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerController.cs"

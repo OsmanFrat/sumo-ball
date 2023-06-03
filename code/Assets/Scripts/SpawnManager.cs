@@ -21,10 +21,9 @@ public class SpawnManager : MonoBehaviour
         SpawnEnemyWave(waveNumber);
         SpawnPowerUp(powerUpNumber);
         InvokeRepeating("SpawnStrongEnemy", 5f, 15f);
-        InvokeRepeating("SpawnGunPowerUp", 3f, repeatRate);
         InvokeRepeating("SpawnSmashPowerUp", 5f, repeatRate);
+        InvokeRepeating("SpawnGunPowerUp", 3f, repeatRate);
         Invoke("SpawnBoss", 25f);
-        
     }
 
 
@@ -52,7 +51,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnSmashPowerUp()
     {
         Instantiate(smashPowerUp, GenerateSpawnPosition(), smashPowerUp.transform.rotation);
-        Destroy(smashPowerUp, 3f);  
+         
     }
 
     void SpawnPowerUp(int powerUpToSpawn)
@@ -60,7 +59,7 @@ public class SpawnManager : MonoBehaviour
         for(int i = 0; i < powerUpToSpawn; i++)
         {
             Instantiate(powerUpPrefab, GenerateSpawnPosition(), powerUpPrefab.transform.rotation);
-            Destroy(powerUpPrefab, 3f);  
+              
 
         }
     }
